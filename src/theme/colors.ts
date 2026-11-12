@@ -1,0 +1,40 @@
+export const colors = {
+  background: '#08090B',
+  backgroundElevated: '#0D0E11',
+  surface: '#111216',
+  surfaceElevated: '#17181D',
+  surfacePressed: '#1D1F25',
+  border: '#25272E',
+  borderSubtle: '#1A1C21',
+  hairline: 'rgba(247, 245, 241, 0.08)',
+  accent: '#D6D0C3',
+  accentMuted: '#B9B0A0',
+  accentStrong: '#EFEAE0',
+  accentContrast: '#08090B',
+  text: '#F4F2ED',
+  textSecondary: '#B5B1A9',
+  textTertiary: '#7E7B75',
+  textDisabled: '#55534F',
+  success: '#8FAE9A',
+  successSurface: 'rgba(143, 174, 154, 0.12)',
+  warning: '#C7A76A',
+  warningSurface: 'rgba(199, 167, 106, 0.12)',
+  danger: '#D47A72',
+  dangerSurface: 'rgba(212, 122, 114, 0.12)',
+  info: '#8FA3B8',
+  infoSurface: 'rgba(143, 163, 184, 0.12)',
+  overlay: 'rgba(5, 6, 8, 0.72)',
+  scrim: 'rgba(5, 6, 8, 0.92)',
+  transparent: 'transparent',
+  white: '#FFFFFF',
+  black: '#000000',
+} as const;
+
+export const gradients = {
+  hero: ['#15161B', '#0A0B0E'] as const,
+  elevated: ['#1A1B21', '#101115'] as const,
+  accent: ['#F2EEE6', '#C9C0AF'] as const,
+  fadeToBackground: ['rgba(8, 9, 11, 0)', '#08090B'] as const,
+} as const;
+
+export type ColorName = keyof typeof colors;
